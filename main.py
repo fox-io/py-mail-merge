@@ -11,6 +11,9 @@ uniquely-named files containing a personalized version of the letter.
 
 
 def main():
+    with open("./input/letter.txt") as letter_file:
+        letter_contents = letter_file.read()
+
     with open("./input/names.txt") as names_file:
         names_contents = names_file.read()
 
